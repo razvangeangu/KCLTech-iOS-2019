@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class AddReminderViewController: UIViewController {
+    
+    // MARK: - Core Data Properties
+    var managedContext: NSManagedObjectContext!
+    
+    // MARK: Outlets
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -35,6 +41,22 @@ class AddReminderViewController: UIViewController {
     }
     
     @IBAction func didPressDone(_ sender: Any) {
+        guard let title = textView.text, !title.isEmpty else {
+            return
+        }
+        
+        let reminder = Reminder(context: self.managedContext)
+        reminder.title = title
+        reminder.priority = Int16(segmentedControl.selectedSegmentIndex)
+        reminder.date = Date()
+        
+        do {
+            try self.managedContext.save()
+            dismiss(animated: true)
+            textView.resignFirstResponder()
+        } catch {
+            print("Error saving reminder: \(error)")
+        }
     }
     
     @IBAction func didPressCancel(_ sender: Any) {

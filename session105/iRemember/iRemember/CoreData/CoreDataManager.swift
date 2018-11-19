@@ -13,7 +13,7 @@ class CoreDataManager {
     public static let shared = CoreDataManager()
     
     var container: NSPersistentContainer {
-        let container = NSPersistentContainer(name: "Reminders")
+        let container = NSPersistentContainer(name: "iRemember")
         container.loadPersistentStores { (description, error) in
             guard error == nil else {
                 print("Error: \(error.debugDescription)")

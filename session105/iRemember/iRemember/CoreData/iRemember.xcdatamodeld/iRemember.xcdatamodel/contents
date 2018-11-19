@@ -6,6 +6,6 @@
         <attribute name="title" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Reminder" positionX="-5440.671875" positionY="-3653.296875" width="128" height="88"/>
+        <element name="Reminder" positionX="-5440.671875" positionY="-3653.296875" width="128" height="90"/>
     </elements>
 </model>

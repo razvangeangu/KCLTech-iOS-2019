@@ -10,7 +10,7 @@
 		36A3A36D2199D8CD009FDF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A36C2199D8CD009FDF67 /* AppDelegate.swift */; };
 		36A3A36F2199D8CD009FDF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A36E2199D8CD009FDF67 /* ViewController.swift */; };
 		36A3A3722199D8CD009FDF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A3A3702199D8CD009FDF67 /* Main.storyboard */; };
-		36A3A3752199D8CD009FDF67 /* Reminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A3732199D8CD009FDF67 /* Reminders.xcdatamodeld */; };
+		36A3A3752199D8CD009FDF67 /* iRemember.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A3732199D8CD009FDF67 /* iRemember.xcdatamodeld */; };
 		36A3A3772199D8CE009FDF67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A3A3762199D8CE009FDF67 /* Assets.xcassets */; };
 		36A3A37A2199D8CE009FDF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A3A3782199D8CE009FDF67 /* LaunchScreen.storyboard */; };
 		36A3A3852199D8CE009FDF67 /* iRememberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A3842199D8CE009FDF67 /* iRememberTests.swift */; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				36C33D4021A340B8005AFD63 /* CoreDataManager.swift */,
-				36A3A3732199D8CD009FDF67 /* Reminders.xcdatamodeld */,
+				36A3A3732199D8CD009FDF67 /* iRemember.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				36A3A36F2199D8CD009FDF67 /* ViewController.swift in Sources */,
 				36A3A36D2199D8CD009FDF67 /* AppDelegate.swift in Sources */,
 				36A3A3A32199DD41009FDF67 /* ReminderTableViewController.swift in Sources */,
-				36A3A3752199D8CD009FDF67 /* Reminders.xcdatamodeld in Sources */,
+				36A3A3752199D8CD009FDF67 /* iRemember.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,13 +636,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		36A3A3732199D8CD009FDF67 /* Reminders.xcdatamodeld */ = {
+		36A3A3732199D8CD009FDF67 /* iRemember.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				36A3A3742199D8CD009FDF67 /* iRemember.xcdatamodel */,
 			);
 			currentVersion = 36A3A3742199D8CD009FDF67 /* iRemember.xcdatamodel */;
-			path = Reminders.xcdatamodeld;
+			path = iRemember.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
